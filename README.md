@@ -44,6 +44,7 @@ $ npm start
 ```
 
 Pronto. Sua aplicação deve executar em [localhost:5000](http://localhost:5000/).
+Para finalizar o servidor web, no terminal, aperte CTRL+C.
 
 ----
 
