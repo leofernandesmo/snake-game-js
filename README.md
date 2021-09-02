@@ -3,7 +3,7 @@ Clássico jogo da cobrinha (bem simples) em JavaScript.
 <img src="sprite-snake.jpg" alt="drawing" width="50"/>
 
 
-## Rodando localmente 1 (apenas para alunos usando o computador)
+<!-- ## Rodando localmente 1 (apenas para alunos usando o computador)
 Você pode rodar o jogo abrindo o arquivo [_views/pages/jogo.html_](views/pages/jogo.html) com o seu navegador.
 
 ```sh
@@ -12,9 +12,9 @@ $ cd snake-game-js
 $ firefox views/pages/jogo.html # ou use outro navegador ex. google-chrome 
 ```
 
-----
+---- -->
 
-## Rodando localmente 2
+## Rodando localmente 
 O jogo usa a infraestrutura do Node.js para publicação no Heroku. Por este motivo, você pode rodar um servidor localmente e executar o jogo.
 
 Antes, você precisa ter o [Node.js](http://nodejs.org/) e o [NPM](https://www.npmjs.com/) instalados.
@@ -37,7 +37,7 @@ Agora execute.
 $ node --version # verificar versão do node
 $ npm --version # verificar versão do NPM
 $ git --version # verificar versão do GIT
-$ git clone https://github.com/<SEU USUARIO DO GITHUB>/snake-game-js.git #só execute clone novamente, se vc ainda não fez clone do projeto
+$ git clone https://github.com/<SEU USUARIO DO GITHUB>/snake-game-js.git 
 $ cd snake-game-js
 $ npm install
 $ npm start
@@ -48,17 +48,34 @@ Para finalizar o servidor web, no terminal, aperte CTRL+C.
 
 ----
 
-## Deploying no Heroku
-###### Obs. Heroku CLI não possui versão oficial para o Termux
+## Deploying no Heroku (opção 1)
+
 
 Agora você pode fazer deploy da suaplicação no Heroku.
-Antes, você precisa ter o Heroku CLI que vai ajudar a gerenciar e dimensionar seus aplicativos, provisionar complementos, visualizar seus logs de aplicativo e executar seu aplicativo localmente. 
+Após fazer o cadastro no site [https://www.heroku.com/](https://www.heroku.com/), você deve acessar o gerenciador de aplicações da sua conta no Heroku através do endereço (https://dashboard.heroku.com/apps)[https://dashboard.heroku.com/apps]. 
+Clique no botão _Create new app_. 
+No campo App name coloque _snake-game-js_ (caso o nome não esteja disponível, coloque -01 no final do nome), em região deixe a opção United States e depois clique no botão Create app.
+
+Na próxima página, na opção _Deploy/Deployment Method_, clique em Github Connect To Github.
+Agora clique no botão que apareceu _Connect to Github_, digite seu login e sua senha do Github e autorize acesso ao seu perfil.
+Clique no botão _Search_ para localizar os repositórios do seu perfil e selecione _snake-game-js_. Para finalizar clique em _Connect_. 
+Uma nova opção vai abrir na tela (_Automatic Deploys_). 
+Clique no botão _Enable Automatic Deploys_.
+Isso permite que o Heroku atualize para uma nova versão sempre que você fizer um novo _git push_ no seu repositório no Github.
+Para finalizar clique no botão _Deploy Branch_
+
+Se tudo ocorreu corretamente, suba a página para o início e clique no botão _Open app_ (no canto superior direito). Pronto! Sua aplicação está em produção, executando em um servidor na nuvem. Agora você pode copiar o endereço da sua aplicação e compartilhar com seus amigos.
+
+
+
+## Deploying no Heroku (opção 2 - apenas para quem está no WSL/Ubuntu)
+Uma segunda forma de fazer deploy no Heroku é usando o Heroku CLI. 
+O Heroku CLI que vai ajudar a gerenciar e dimensionar seus aplicativos, provisionar complementos, visualizar seus logs de aplicativo e executar seu aplicativo localmente. 
+Instale o Heroku CLI com o comando abaixo (você precisa ter o snap instalado na sua máquina)
 
 ```sh
 $ sudo snap install heroku --classic 
 ```
-
-
 
 ```sh
 $ heroku login # isso deve abrir o navegador e pedir para você entrar com seu login e senha no Heroku
