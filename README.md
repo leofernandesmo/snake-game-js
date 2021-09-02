@@ -52,19 +52,24 @@ Para finalizar o servidor web, no terminal, aperte CTRL+C.
 
 
 Agora você pode fazer deploy da suaplicação no Heroku.
-Após fazer o cadastro no site [https://www.heroku.com/](https://www.heroku.com/), você deve acessar o gerenciador de aplicações da sua conta no Heroku através do endereço (https://dashboard.heroku.com/apps)[https://dashboard.heroku.com/apps]. 
+
+Após fazer o cadastro no site [https://www.heroku.com/](https://www.heroku.com/), você deve acessar o gerenciador de aplicações da sua conta no Heroku através do endereço [https://dashboard.heroku.com/apps]. 
+
 Clique no botão _Create new app_. 
 No campo App name coloque _snake-game-js_ (caso o nome não esteja disponível, coloque -01 no final do nome), em região deixe a opção United States e depois clique no botão Create app.
 
 Na próxima página, na opção _Deploy/Deployment Method_, clique em Github Connect To Github.
 Agora clique no botão que apareceu _Connect to Github_, digite seu login e sua senha do Github e autorize acesso ao seu perfil.
 Clique no botão _Search_ para localizar os repositórios do seu perfil e selecione _snake-game-js_. Para finalizar clique em _Connect_. 
+
 Uma nova opção vai abrir na tela (_Automatic Deploys_). 
 Clique no botão _Enable Automatic Deploys_.
 Isso permite que o Heroku atualize para uma nova versão sempre que você fizer um novo _git push_ no seu repositório no Github.
-Para finalizar clique no botão _Deploy Branch_
+Para finalizar clique no botão _Deploy Branch_.
 
-Se tudo ocorreu corretamente, suba a página para o início e clique no botão _Open app_ (no canto superior direito). Pronto! Sua aplicação está em produção, executando em um servidor na nuvem. Agora você pode copiar o endereço da sua aplicação e compartilhar com seus amigos.
+Se tudo ocorreu corretamente, volte para o início da página e clique no botão _Open app_ (no canto superior direito). 
+
+Pronto! Sua aplicação está em produção, executando em um servidor na nuvem. Agora você pode copiar o endereço da sua aplicação e compartilhar com seus amigos.
 
 
 
